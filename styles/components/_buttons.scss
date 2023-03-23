@@ -1,0 +1,93 @@
+// @use '../abstracts/variables' as *; with @use we use it like this
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+//we learned how to use variables
+// @each  $cursor in $cursors {
+  // .cursor-#{$cursor} {
+    //cursor:  $value; 
+  // }
+// }
+
+@each  $color, $value in $theme-colors {
+  .btn-#{$color} {
+    //background:  $value;
+    @include button($value);  
+    //@include button;   
+  }
+  //   .btn-.btn-#{$color}:hover {
+  //   opacity: .9;
+  // } we put this inside the @mixin button($value)
+}
+
+// .card {
+//   h5 {
+
+//   }
+// }
+
+.card-title {
+
+}
+
+
+/* Buttons */
+// .btn-red {
+//     background-color: $btn-background;
+//     color: white !important;
+//     border: 0;
+//     text-decoration: none;
+//     color: #838EA4;
+//     font-weight: 500;
+//     font-size: .975rem;
+//     padding: 1rem 1.25rem;
+//     border-radius: 4px;
+//     transition: all ease-in .2s;
+//   }
+  // .btn-red:hover {
+  //   opacity: .9;
+  // }
+  
+  .btn-blue {
+    border: 0;
+    text-decoration: none;
+    color: #838EA4;
+    font-weight: 500;
+    font-size: .975rem;
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    transition: all ease-in .2s;
+    background-color: #0A2463;
+    color: white;
+  }
+  
+  .btn-link {
+    border: 0;
+    text-decoration: none;
+    background: transparent;
+    color: #838EA4;
+    font-weight: 500;
+    font-size: .975rem;
+    padding: 1rem 1.25rem;
+  }
+  
+  .btn-link:hover {
+   color: #FF595E;
+  }
+  .btn-icon {
+    border: 0;
+    text-decoration: none;
+    color: #838EA4;
+    font-weight: 500;
+    font-size: .975rem;
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

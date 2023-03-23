@@ -1,0 +1,27 @@
+/* Table of contents
+------------------------------------
+-- base imports reset typography
+-- components imports buttons navbar hero reasons 
+-- layout imports main footer
+
+**/
+
+/* base imports */
+@import './base/reset';
+@import './base/typography';
+
+/* components imports */
+@import './components/buttons';
+@import './components/navbar';
+@import './components/hero';
+@import './components/reasons';
+
+/* layout imports */
+@import './layout/main';
+@import './layout/footer';
+
+
+/* abstact imports / carried to buttons */
+// @import './abstracts/variables';
+
+
